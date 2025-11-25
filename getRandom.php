@@ -19,7 +19,7 @@ function fetchWithCurl($url) {
 }
 
 try {
-    $apiUrl = 'https://vibewalls.42web.io/index/getRandom';
+    $apiUrl = 'https://vibewalls.42web.io/testing.php';
     
     // Try file_get_contents first, then cURL as fallback
     $response = @file_get_contents($apiUrl);
