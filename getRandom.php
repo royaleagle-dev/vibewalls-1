@@ -23,6 +23,7 @@ try {
     
     // Try file_get_contents first, then cURL as fallback
     $response = @file_get_contents($apiUrl);
+    print_r($response);
     
     if ($response === FALSE) {
         list($response, $httpCode) = fetchWithCurl($apiUrl);
